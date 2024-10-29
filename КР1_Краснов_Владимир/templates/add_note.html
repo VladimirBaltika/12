@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заметки</title>
+</head>
+<body>
+    <h1>Заметки</h1>
+    <form method="post">
+        <label for="name">Текст:</label>
+        <input type="text" id="name" name="name" required>
+		<label for="name">Описание:</label>
+		<input type="text" id="description" name="description" required>
+        <button type="submit">Добавить</button>
+    </form>
+    <a href="{{ url_for('index') }}">Назад</a>
+</body>
+</html>

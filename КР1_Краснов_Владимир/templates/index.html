@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заметки</title>
+    <style>
+        /* CSS to change text color to purple */
+        body {
+            color: purple; /* Set the text color of the body to purple */
+        }
+    </style>
+</head>
+<body>
+    <h1>Заметки</h1>
+
+    <ul>
+        {% for note in notes %}
+            <li>{{ note.name }} - Описание: {{description.note.name }}</li>
+        {% endfor %}
+    </ul>
+
+
+
+
+    <h2>Добавить</h2>
+    <ul>
+        <li><a href="{{ url_for('add_note') }}">Добавить Заметку</a></li>
+        
+    </ul>
+</body>
+</html>
